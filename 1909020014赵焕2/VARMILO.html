@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varmilo 阿米洛机械键盘官方网站</title>
+    <link href="VARMILO.css" rel="stylesheet">
+    <script src="VARMILO.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏部分 -->
+    <div class="nav">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" />
+            </a>
+        </div>
+        <div class="caidan">
+            <ul class="nava">
+                <li class="lia" id="lis">
+                    <a>
+                        <img src="images/语言.png" />
+                    </a>
+                    <ul class="ula">
+                        <li><a href="#">中文</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+                <script>
+                    var nava = document.querySelector('.nava')
+                    var lis = nava.childern;
+                    for (var i = 0; i < lis.length; i++) {
+                        lis[i].onmouseover = function() {
+                            this.children[1].style.display = 'block';
+                        }
+                        lis[i].onmouseout = function() {
+                            this.children[1].style.display = 'none';
+                        }
+                    }
+                </script>
+                <li><a href="#">首页</a></li>
+                <li class="lib"><a href="#">主题键盘</a>
+                    <ul class="ulb">
+                        <li>
+                            <img src="images/lun1.png" class="pic" />
+                        </li>
+                        <li><a href="#">20%主题产品</a></li>
+                        <li><a href="#">65%主题产品</a></li>
+                        <li><a href="#">80%主题产品</a></li>
+                        <li><a href="#">100%主题产品</a></li>
+                        <li><a href="#">110%主题产品</a></li>
+                    </ul>
+                </li>
+                <li class="lic"><a href="#">私人定制</a>
+                    <ul class="ulc">
+                        <li><img src="images/lun2.png" class="pic"></li>
+                        <li><a href="#">65%私人订制</a></li>
+                        <li><a href="#">80%私人订制</a></li>
+                        <li><a href="#">110%私人订制</a></li>
+                    </ul>
+
+
+
+                </li>
+                <li><a href="#">技术支持</a></li>
+                <li><a href="#">商务合作</a></li>
+                <li><a href="#">常见问题FAQ</a></li>
+                <li class="lll"><input type="text" value="搜索" class="int"></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="lunbo">
+        <ul>
+            <li> <img src="images/lunbo1.png" alt=""></li>
+            <li> <img src="images/lunbo2.png" alt=""></li>
+            <li><img src="images/lunbo3.png" alt=""></li>
+            <li> <img src="images/lunbo4.png" alt=""></li>
+            <li><img src="images/lunbo5.png" alt=""></li>
+            <li> <img src="images/lunbo6.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="last">
+        <img src="images/chanpin1.png" alt="" class="imga">
+        <img src="images/chanpin2.png" alt="" class="imgb">
+        <img src="images/text1.png" alt="" class="imgea">
+        <img src="images/text2.png" alt="" class="imgeb">
+        <img src="images/chanpin3.png" alt="" class="imgc">
+        <img src="images/chanpin4.png" alt="" class="imgd">
+        <img src="images/chanpin5.png" alt="" class="imge">
+        <img src="images/chanpin6.png" alt="" class="imgf">
+    </div>
+    <div class="end">
+        <ul>
+            <li class="lii">
+                <img src="images/dizhi.png" alt=""> <br> 地址 <br> 深圳市光明新区公明办事处田寮社区第十工业区3栋二楼B区
+
+            </li>
+            <li>
+                <img src="images/dianhua.png" alt=""> <br>联系我们 <br>电话:18926579789 邮箱:zhh52@zhihaihe.cn , zhh19@zhihaihe.cn <br> (For English) 邮编：518132
+            </li>
+            <li class="lli"> <img src="images/zhifu.png" alt="">
+                <p>
+                    支付方式 <br> 微信 <img src="images/wechat.png"> paypal <img src="images/paypal.png">支付宝<img src="images/zhifubao.png"> <br> 深圳志海和科技有限公司
+                </p>
+            </li>
+        </ul>
+    </div>
+    <a href="#" class="ce">
+        <div class="cebian">
+            联<br>系<br>我<br>们
+        </div>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+
+.caidan {
+    float: left;
+    width: 1000px;
+}
+
+.caidan ul li {
+    float: left;
+    list-style: none;
+}
+
+.caidan ul .lll .int {
+    height: 26px;
+    width: 200px;
+    border-radius: 13px;
+}
+
+.caidan ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+}
+
+.caidan ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav .caidan .pic {
+    float: left;
+    display: block;
+    width: 80px;
+    height: 25px;
+}
+
+.nav .caidan ul .lia {
+    width: 45px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.nav .caidan .ula {
+    width: 100px;
+    height: 100px;
+}
+
+.nav .caidan ul .lia .ula {
+    position: absolute;
+    top: 50px;
+}
+
+.nav .caidan ul .lib {
+    position: relative;
+    margin-left: 50px;
+}
+
+.nav .caidan .ulb {
+    width: 150px;
+}
+
+.nav .caidan ul .lib .ulb {
+    position: absolute;
+    float: left;
+    top: 50px;
+}
+
+.nav .caidan ul .lic {
+    position: relative;
+    margin-left: 70px;
+}
+
+.nav .caidan .ulc {
+    width: 150px;
+}
+
+.nav .caidan ul .lic .ulc {
+    position: absolute;
+    float: left;
+    top: 50px;
+}
+
+.lunbo {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.lunbo ul {
+    position: absolute;
+    margin-left: -45px;
+    width: 7260px;
+    animation: move 20s 5s infinite;
+    transition: left 3s;
+}
+
+.lunbo ul li {
+    float: left;
+    list-style: none;
+}
+
+.lunbo ul li img {
+    height: 500px;
+    width: 1210px;
+}
+
+@keyframes move {
+    o% {
+        left: 0;
+    }
+    16% {
+        left: -1210px;
+    }
+    33% {
+        left: -2420px;
+    }
+    50% {
+        left: -3630px;
+    }
+    66% {
+        left: -4840px;
+    }
+    83% {
+        left: -6050px;
+    }
+    100% {
+        left: -7260px
+    }
+}
+
+.last {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    margin-top: 10px;
+}
+
+.last img {
+    display: block;
+    position: absolute;
+}
+
+.last img::before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3) url;
+}
+
+.last img::before:hover {
+    display: block;
+    transform: scale(1.2 1.2);
+}
+
+.imga {
+    width: 431px;
+    height: 208px;
+    left: 30px;
+    top: 10px;
+}
+
+.imgb {
+    width: 560px;
+    height: 320px;
+    top: 10px;
+    left: 480px;
+}
+
+.imgea {
+    width: 50px;
+    height: 320px;
+    right: 100px;
+    top: 10px;
+}
+
+.imgeb {
+    width: 50px;
+    height: 320px;
+    right: 30px;
+    top: 10px;
+}
+
+.imgc {
+    width: 431px;
+    height: 431px;
+    margin-top: 250px;
+    left: 30px;
+}
+
+.imgd {
+    width: 690px;
+    height: 352px;
+    top: 370px;
+    right: 30px;
+}
+
+.imge {
+    width: 610px;
+    height: 281px;
+    top: 750px;
+    left: 30px;
+}
+
+.imgf {
+    width: 500px;
+    height: 282px;
+    top: 750px;
+    right: 30px;
+}
+
+.end {
+    margin-top: 10px;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+}
+
+.end ul li img {
+    margin: 10px auto;
+}
+
+.end ul li {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 300;
+    float: left;
+    width: 49%;
+    height: 200px;
+    list-style: none;
+    border-bottom: 1px solid #999999;
+}
+
+.end ul .lli {
+    width: 100%;
+}
+
+.end ul .lii {
+    border-right: 1px solid #999999;
+}
+
+.end ul li p img {
+    width: 20px;
+    height: 20px;
+}
+
+.cebian {
+    width: 50px;
+    height: 150px;
+    background-color: rgb(199, 155, 104);
+    position: fixed;
+    top: 250px;
+    right: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.ce .cebian:hover {
+    background-color: wheat;
+}
