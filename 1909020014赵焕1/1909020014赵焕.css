@@ -1,0 +1,187 @@
+    .big {
+        background-color: #090723;
+    }
+    
+    .nav {
+        position: relative;
+        height: 150px;
+    }
+    
+    .left {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        float: left;
+        font-size: 30px;
+    }
+    
+    .left a {
+        font-size: 25px;
+        color: #ffffff;
+    }
+    
+    .center {
+        position: absolute;
+        top: 10px;
+        left: 80px;
+        float: left;
+        margin-left: 60px;
+    }
+    
+    .center ul li {
+        float: left;
+        padding: 0 10px;
+        list-style: none;
+    }
+    
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        color: #82818f;
+    }
+    
+    .center ul li a:hover {
+        color: #ffffff;
+    }
+    
+    .right {
+        position: absolute;
+        top: 10px;
+        right: 280px;
+        float: right;
+    }
+    
+    .right input {
+        color: #82818f;
+        background-color: #090723;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .prc {
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+    
+    .prc img {
+        float: right;
+        margin-top: 0;
+        height: 50px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    
+    .big .last {
+        width: 100%;
+        height: 350px;
+        margin: 120px auto;
+        background-color: #090723;
+    }
+    
+    .last div {
+        float: left;
+        margin: 0 20px;
+        color: #82818f;
+    }
+    
+    .last div a {
+        display: block;
+        width: 180px;
+        height: 150px;
+        background-color: #0c1433;
+        margin-left: 20px;
+        text-align: center;
+        padding-top: 100px;
+        border-radius: 10px;
+    }
+    
+    .last div a:hover {
+        color: #ffffff;
+    }
+    
+    .last1:hover {
+        background-color: #54c0cc;
+    }
+    
+    .last1 {
+        margin-left: 80px;
+    }
+    
+    .last2:hover {
+        background-color: #d9395c;
+    }
+    
+    .last3:hover {
+        background-color: #a54abc;
+    }
+    
+    .last4:hover {
+        background-color: #e85e0e;
+    }
+    
+    .last5:hover {
+        background-color: #119895;
+    }
+    
+    h2,
+    p {
+        text-align: center;
+    }
+    
+    h2 {
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 14px;
+        color: #82818f;
+    }
+    
+    img {
+        display: block;
+        height: 414px;
+        margin-left: 225px;
+    }
+    
+    h4 {
+        font-weight: 400;
+        color: #82818f;
+        text-align: center;
+    }
+    
+    h4 p {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .introduction {
+        width: 1045px;
+        height: 181px;
+    }
+    
+    .introduction ul li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0 5px;
+        width: 240px;
+        height: 161px;
+    }
+    
+    .jietu {
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    .back {
+        position: sticky;
+        top: 400px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
