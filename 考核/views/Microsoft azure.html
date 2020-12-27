@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Azure 云计算-安全可信的智能云服务平台</title>
+    <link rel="stylesheet" href="../css/responsive.css" media="screen and (max-width:900px)">
+    <link rel="stylesheet" href="../css/Microsoft azure.css" media="screen and (min-width:900px)">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <script src="../js/lunbobo.js" type="text/javascript"></script>
+    <!-- <script src="../js/nav.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="../plugins/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../font/font1/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../font/font2/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../font/font3/iconfont.css">
+</head>
+
+<body>
+    <!-- 搜索行 -->
+    <header>
+        <div class="first">
+            <embed src="../images/logo.svg" type="image/svg+xml" id="logo1" />
+            <!-- <a href="#" class="iconfont"> -->
+            <span class="iconfont icon-sousuo" title="搜索"></span>
+            <!-- </a> -->
+            <input type="text" class="find" value="请输入搜索关键字">
+            <a href="#" class="denglu">登录azure门户</a>
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav">
+            <ul class="nav1">
+                <li class="li1 first-nav" onmouseover="showmenu1(this)" onmouseout="hidemenu1(this)"><a href="#">认识Azure</a>
+                    <ul class="secnav">
+                        <li><a href="#">什么是Azure?</a><br>
+                            <span>了解Azure服务基础知识</span>
+                        </li>
+                        <li><a href="#">中国版Azure（世纪互联运营）Vs.全球版Azure</a><br>
+                            <span>哪种公有云最适合你？</span>
+                        </li>
+                        <li><a href="#">Azure可用服务</a><br>
+                            <span>Azure中国可用服务列表</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="li2 first-nav" onmouseover="showmenu1(this)" onmouseout="hidemenu1(this)" onmouseover="showmenu2(this)" onmouseout="hidemenu2(this)"><a href="#">产品</a>
+                    <ul class="secnav">
+                        <li>
+                            <a href="#">AI</a><img src="../images/jiantou.png" title="AI">
+                        </li>
+                        <li>
+                            <a href="#">Azure Stack</a><img src="../images/jiantou.png" title="Azure Stack">
+                        </li>
+                        <li>
+                            <a href="#">安全性</a><img src="../images/jiantou.png" title="安全性">
+                        </li>
+                        <li>
+                            <a href="#">标识</a><img src="../images/jiantou.png" title="标识">
+                        </li>
+                        <li>
+                            <a href="#">存储</a><img src="../images/jiantou.png" title="存储">
+                        </li>
+                        <li>
+                            <a href="#">分析</a><img src="../images/jiantou.png" title="分析">
+                        </li>
+                        <li>
+                            <a href="#">管理工具</a><img src="../images/jiantou.png" title="管理工具">
+                        </li>
+                        <li>
+                            <a href="#">集成</a><img src="../images/jiantou.png" title="集成">
+                        </li>
+                        <li>
+                            <a href="#">计算</a><img src="../images/jiantou.png" title="计算">
+                        </li>
+                        <li>
+                            <a href="#">联网</a><img src="../images/jiantou.png" title="联网">
+                        </li>
+                        <li>
+                            <a href="#">媒体</a><img src="../images/jiantou.png" title="媒体">
+                        </li>
+                        <li>
+                            <a href="#">迁移</a><img src="../images/jiantou.png" title="迁移">
+                        </li>
+                        <li>
+                            <a href="#">容器</a><img src="../images/jiantou.png" title="容器">
+                        </li>
+                        <li>
+                            <a href="#">数据库</a><img src="../images/jiantou.png" title="数据库">
+                        </li>
+                        <li>
+                            <a href="#">网站</a><img src="../images/jiantou.png" title="网站">
+                        </li>
+                        <li>
+                            <a href="#">物联网</a><img src="../images/jiantou.png" title="物联网">
+                        </li>
+                        <li>
+                            <a href="#">移动</a><img src="../images/jiantou.png" title="移动">
+                        </li>
+                        <li>
+                            <a href="#">开发人员工具</a><img src="../images/jiantou.png" title="开发人员工具">
+                        </li>
+                    </ul>
+                    <div class="secnav-right">
+                        <ul class="secnav-rightul">
+                            <li><a href="#">认知服务</a><br>
+                                <span>添加智能API功能以启用上下文交互</span>
+                            </li>
+                            <li><a href="#">计算机视觉</a><br>
+                                <span>从图像中提取可操作性信息</span>
+                            </li>
+                            <li><a href="#">人脸识别</a><br>
+                                <span>检测、识别、分析、组织和标记照片中的人脸</span>
+                            </li>
+                            <li><a href="#">内容审查器</a><br>
+                                <span>计算机辅助内容审查器API以及用于图像、文本和视频的人工审阅工具</span>
+                            </li>
+                            <li><a href="#">文本分析</a><br>
+                                <span>监测文本中的情绪、关键语句和语言</span>
+                            </li>
+                            <li><a href="#">文本翻译</a><br>
+                                <span>通过简单的REST API 调用即可轻松进行实时文本翻译</span>
+                            </li>
+                            <li><a href="#">语言理解</a><br>
+                                <span>教会应用理解用户发出的命令</span>
+                            </li>
+                            <li><a href="#">语音服务</a><br>
+                                <span>将语音转换为文本，文本转换为自然语言</span>
+                            </li>
+                            <li><a href="#">Metrics Advisor</a><br>
+                                <span>主动监视指标和诊断问题的AI分析服务</span>
+                            </li>
+                            <li><a href="#">Azure认知搜索</a><br>
+                                <span>用于移动和Web应用开发的AI支持的云搜索服务</span>
+                            </li>
+                            <li><a href="#">机器学习</a><br>
+                                <span>构建和训练模型，并将其从云端部署到边缘</span>
+                            </li>
+                            <li><a href="#">Azure Databricks</a><br>
+                                <span>用于Apache SparkTM 的简便快捷的协作式分析服务</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">价格</a></li>
+                <li><a href="#">解决方案</a></li>
+                <li class="li3 first-nav" onmouseover="showmenu1(this)" onmouseout="hidemenu1(this)"><a href="#">案例与伙伴</a>
+                    <ul class="secnav">
+                        <li><a href="#">案例研究</a><br>
+                            <span>人们正在使用Azure做着令人惊叹的事，来听听他们的故事吧</span>
+                        </li>
+                        <li><a href="#">寻找合作伙伴</a><br>
+                            <span>通过经验丰富的合作伙伴的帮助在云中启动并运行业务</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="li4 first-nav" onmouseover="showmenu1(this)" onmouseout="hidemenu1(this)"><a href="#">文档</a>
+                    <ul class="secnav">
+                        <li>
+                            <a href="#">技术文档</a><img src="../images/jiantou.png" title="技术文档">
+                        </li>
+                        <li>
+                            <a href="#">购买+计费</a><img src="../images/jiantou.png" title="购买+计费">
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">培训</a></li>
+                <li class="li5 first-nav" onmouseover="showmenu1(this)" onmouseout="hidemenu1(this)"><a href="#">支持</a>
+                    <ul class="secnav">
+                        <li><a href="#">联系我们</a><br>
+                            <span>在线申请，微信，论坛，总之有各种方式联系到我们</span>
+                        </li>
+                        <li><a href="#">支持计划</a><br>
+                            <span>看看Azure究竟提供了哪些专业技能来提高你的工作效率</span>
+                        </li>
+                        <li><a href="#">服务仪表盘</a><br>
+                            <span>Azure服务仪表报告</span>
+                        </li>
+                        <li><a href="#">法律信息</a><br>
+                            <span>Azure服务运营的相关法律信息</span>
+                        </li>
+                        <li><a href="#">信任中心</a><br>
+                            <span>解答您对数据隐私和安全的忧虑，方便查看购买和使用Azure的相关规定</span>
+                        </li>
+                        <li><a href="#">Azure知识产权保护计划</a><br>
+                            <span>针对知识产权（IP）风险提供业界首创的全方位保护</span>
+                        </li>
+                        <li><a href="#">ICP备案</a><br>
+                            <span>查看购买Azure服务，如何免费获取ICP备案帮助</span>
+                        </li>
+                        <li><a href="#">公安备案</a><br>
+                            <span>网站用户完成ICP备案后30日内需完成公安备案</span>
+                        </li>
+                        <li><a href="#">常见问题</a><br>
+                            <span>有关Azure常见问题的快速解答</span>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Azure市场</a></li>
+                <li><a href="#">Azure Globe/china</a></li>
+            </ul>
+            <span><a href="#">申请使用  &gt</a></span>
+        </div>
+    </header>
+    <script src="../js/nav.js" type="text/javascript">
+    </script>
+    <!-- 固定二维码 -->
+    <div class="QR-code">
+        <a href="#">
+            <span class="iconfont icon-erweima" title="搜索"></span>
+        </a>
+    </div>
+    <!-- 轮播图 -->
+    <!--Swiper-->
+    <div class="lunbo-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="lunbo1">
+                        <div>
+                            <h1>Azure认知服务Metrics Advisor预览版正式发布</h1>
+                            <p>用AI主动监测指标和诊断问题</p>
+                        </div>
+                        <span>了解更多 &gt</span>
+                        <embed src="../images/lunbo1.svg" type="image/svg+xml" id="lunbosvg" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="lunbo2">
+                        <div>
+                            <h1>适用于Azure虚拟网络的IPv6正式发布</h1>
+                        </div>
+                        <span>了解更多  &gt</span>
+                        <img src="../images/lunbo2.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="lunbo3">
+                        <div>
+                            <h1>Azure认知服务语音服务正式发布</h1>
+                            <P>轻松将实时语音生成文本信息</P>
+                        </div>
+                        <span>了解更多  &gt</span>
+                        <img src="../images/lunbo3.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="lunbo4">
+                        <div>
+                            <h1>Azure应用程序网关V2</h1>
+                            <P>根据变化的流量负载模式，进行纵向扩展或缩减</P>
+                        </div>
+                        <span>了解更多  &gt</span>
+                        <img src="../images/lunbo4.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="lunbo5">
+                        <div>
+                            <h1>Azure应用服务环境正式发布</h1>
+                            <p>提供完全隔离的环境，大规模运行Azure应用服务</P>
+                        </div>
+                        <span>了解更多  &gt</span>
+                        <img src="../images/lunbo5.png">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <script src="../plugins/swiper.min.js" type="text/javascript"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- 技术文档行 -->
+    <div class="row">
+        <a href="#">
+
+            <h2>技术文档 <span class="iconfont icon-youjiantou"></span></h2>
+            <p>祝你了解Azure,提高工作效率，节<br>省运营成本</p>
+
+            <img src="../images/rocket.png" alt="">
+
+        </a>
+        <a href="#">
+            <h2>案例研究<span class="iconfont icon-youjiantou"></span></h2>
+
+            <P>了解目前正在使用Azure解决方案的<br>案例和分析</P>
+            <img src="../images/announcement.png" alt="">
+        </a>
+        <a href="#">
+            <h2>最新公告<span class="iconfont icon-youjiantou"></span></h2>
+
+            <p>Azure虚拟WAN正式公布</p>
+            <img src="../images/hot-topic.png" alt="">
+        </a>
+    </div>
+    <!-- 切换菜单 -->
+    <div class="menu-child">
+        <div class="out">
+            <div class="left">
+                <ul>
+                    <li><a href="#">电子商务 </a></li>
+                    <li><a href="#">数字媒体 </a></li>
+                    <li><a href="#">备份和存档</a></li>
+                    <li><a href="#">大数据与分析</a></li>
+                    <li><a href="#">开发和测试</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">数字营销</a></li>
+                </ul>
+            </div>
+            <div class="right" id="right1">
+                <h1>电子商务</h1>
+                <img src="../images/SM-dianshang-slice.png">
+                <p>无论你销售的是什么产品，你都需要同时满足客户和业务需求的安全、可缩放电子商务解决方案。通过<br>自定义产品和优惠吸引客户，安全快速地处理事务并</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+            <div class="right" id="right2">
+                <h1>数字媒体</h1>
+                <img src="../images/SM-media-slice.png">
+                <p>从优质视频内容的全球分发到指导员工和调用其参与度，再到联系客户和进行互动，均可使用媒体的力量来实现企业转变。快速构建和部署视频解决方案、按需扩展，并随时随地使用任何设备交付视频</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+            <div class="right">
+                <h1>备份与存档</h1>
+                <img src="../images/SM-SQL-slice.png">
+                <p>保护驻留在任何位置的数据和应用程序，以避免成本高昂的业务中断或以满足符合性要求。安全地将本地备份存储和数据存档解决方案扩展到云，从而降低成本和复杂性，同时实现高效率和可伸缩性。</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+            <div class="right">
+                <h1>大数据与分析</h1>
+                <img src="../images/SM-dashuju-slice.png">
+                <p>通过实时分析海量数据，从而提供更好的体验，并做出更好的决策。获取所需的见解以提供智能操作，从而增强客户互动、增加收入并降低成本</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+            <div class="right">
+                <h1>开发与测试</h1>
+                <img src="../images/SM-automation-slice.png">
+                <p>你将更快地提供更多功能 - 保持使用最新的全套开发和测试工具，使你的团队以云速度进行协作和交付。通过可缩放的按需基础结构，根据你的要求快速创建一致的开发和测试环境</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+            <div class="right">
+                <h1>游戏</h1>
+                <img src="../images/SM-game-slice.png">
+                <p>在此处构建全球游戏体验，通过安全的全球云和游戏专用服务创建和运行游戏 - 适用于各种规模和预算的 studio。</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+            <div class="right">
+                <h1>数字营销</h1>
+                <img src="../images/SM-senparc-slice.png">
+                <p>利用丰富、个性化的数字营销体验吸引全球的客户。快速构建和启动根据客户需求自动缩放的数字营销活动。凭借强大的数据分析，分析并提高活动的成效。</p>
+                <a href="#"><span>了解更多 &gt</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- Azure云产品 -->
+    <div class="production">
+        <div class="big-box">
+            <h1>为你推荐全能高效的Azure产品</h1>
+            <a href="#" class="a-box">
+                <h2>Azure Spring Cloud</h2>
+                <embed src="../images/spring-cloud.svg" type="image/svg+xml" id="spring" />
+                <p>联合VMware共同构建和运营的完全<br>托管的Spring Cloud服务</p>
+                <span>0 元/小时 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>专用链接</h2>
+                <embed src="../images/private-link.svg" type="image/svg+xml" id="spring" />
+                <p>改进了Azure服务资源的安全性和路<br>由</p>
+                <span>0.102 元/小时 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>Azure Sql Edge</h2>
+                <embed src="../images/sql.svg" type="image/svg+xml" id="spring" />
+                <p>占用内存少、边缘优化的SQL数据可<br>引擎，并内置AI</p>
+                <span>0.0822 元/小时 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>Azure Databricks</h2>
+                <embed src="../images/databricks.svg" type="image/svg+xml" id="spring" />
+                <p>基于 Apache SparkTM 的简便快捷的协<br>作式分析服务</p>
+                <span>0.75 元/小时 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>虚拟机</h2>
+                <embed src="../images/vm.svg" type="image/svg+xml" id="spring" />
+                <p>在几秒钟内预配好<br> Windows 和 Lunix 虚拟机</p>
+                <span>0.11 元/小时 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>云服务</h2>
+                <embed src="../images/cloud-services.svg" type="image/svg+xml" id="spring" />
+                <p>创建高度可用且可<br>无限缩放的云应用程序和API</p>
+                <span>0.11 元/小时 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>存储</h2>
+                <embed src="../images/storage.svg" type="image/svg+xml" id="spring" />
+                <p>持久的、高度可用的、<br>高度可伸缩的云存储器</p>
+                <span>提供免费版  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>Azure 资源管理器</h2>
+                <embed src="../images/resource.svg" type="image/svg+xml" id="spring" />
+                <p>简化应用资源的管理方式</p>
+                <span>免费  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>应用程序配置</h2>
+                <embed src="../images/app-configruations.svg" type="image/svg+xml" id="spring" />
+                <p>用于应用程序配置的快速、可缩放的<br>参数存储</p>
+                <span>免费  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>Azure Bastion</h2>
+                <embed src="../images/spring-cloud.svg" type="image/svg+xml" id="spring" />
+                <p>到虚拟机的专用且完全托管的RDP和<br>SSH访问</p>
+                <span>免费  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>Azure Databox</h2>
+                <img src="../images/data-box-disk.png">
+                <p>可在脱机状态下将数据更轻松地移入<br>和移出Azure设备</p>
+                <span>63.6 元/天 起  &gt</span>
+            </a>
+            <a href="#" class="a-box">
+                <h2>AAD 域服务</h2>
+                <embed src="../images/spring-cloud.svg" type="image/svg+xml" id="spring" />
+                <p>提供可缩放的高性能托管域服务</p>
+                <span>4.07 元/小时 起  &gt</span>
+            </a>
+        </div>
+        <div class="small-box">
+            <a href="#" class="b-box">
+                <h1>全部64个云产品</h1>
+                <p> &gt </p>
+            </a>
+        </div>
+    </div>
+    <!-- 使用Azure -->
+    <div class="container">
+        <p>看看谁在使用 Azure</p>
+        <div>
+            <a href="#"><img src="../images/unionclinic@2x.png" alt=""></a>
+            <a href="#"><img src="../images/case-zhaoshang@2x.png" alt=""></a>
+            <a href="#"><img src="../images/guangmingwang@2x.png" alt=""></a>
+            <a href="#"><img src="../images/logo_qoros@2x.png" alt=""></a>
+            <a href="#"><img src="../images/logo_digitalchina@2x.png" alt=""></a>
+            <a href="#"> <img src="../images/vane@2x.png" alt=""></a>
+            <a href="#"><img src="../images/case-mobike@2x.png" alt=""></a>
+            <a href="#"><img src="../images/arrail@2x.png" alt=""></a>
+            <a href="#"><img src="../images/michelin@2x.png" alt=""></a>
+            <a href="#"> <img src="../images/thyssenkrupp@2x.png" alt=""></a>
+            <a href="#"><img src="../images/case-roche@2x.png" alt=""></a>
+            <a href="#"><img src="../images/case-rollsroyce@2x.png" alt=""></a>
+        </div>
+        <a href="#">更多案例 &gt</a>
+    </div>
+    <!-- 地图 -->
+    <div class="map">
+        <p>Azure技术遍布全球</p>
+        <p class="p1">在中国，由世纪互联运营，数据中心BGP接入，支持异地复制</p>
+        <div> <embed src="../images/2d4fc7e94a4043b4bd51f8ab13c1bd3b.svg" type="image/svg+xml" id="map1" /></div>
+
+    </div>
+    <!-- 通知 -->
+    <div class="notice">
+        <a href="#">.未经备案的域名可能会被屏蔽</a>
+        <a href="#">.关于自查整改"翻墙"行为的通知！</a>
+        <a href="#">.互联网信息服务单位网络安全责任告知书</a>
+    </div>
+    <!-- 关于我们 -->
+    <div class="about">
+        <footer class="last">
+            <div class="footer1">
+                <ul>
+                    <li class="erweima">
+                        <p>关注我们</p>
+                        <div>
+                            <embed src="../images/about us.svg" type="image/svg+xml" class="code" />
+                            <span>关注我们</span>
+                        </div>
+                        <p>快速获取支持</p>
+                        <div>
+                            <embed src="../images/support.svg" type="image/svg+xml" class="code" />
+                            <span>快速获取支持</span>
+                        </div>
+                    </li>
+                    <li class="hideli">
+                        <p>Azure</p>
+                        <ul>
+                            <li><a href="#">认识Azure</a></li>
+                            <li><a href="#">产品</a></li>
+                            <li><a href="#">价格</a></li>
+                            <li><a href="#">优惠详情</a></li>
+                            <li><a href="#">中国区Azure购买指南</a></li>
+                            <li><a href="#">视频中心</a></li>
+                            <li><a href="#">通用解决方案</a></li>
+                            <li><a href="#">客户案例</a></li>
+                            <li><a href="#">技术文档</a></li>
+                            <li><a href="#">博客</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideli">
+                        <p>支持</p>
+                        <ul>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">支持计划</a></li>
+                            <li><a href="#">服务仪表盘</a></li>
+                            <li><a href="#">法律</a></li>
+                            <li><a href="#">服务级别协议</a></li>
+                            <li><a href="#">ICP备案</a></li>
+                            <li><a href="#">公安备案</a></li>
+                            <li><a href="#">发票</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">最新公告</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideli">
+                        <p>信任中心</p>
+                        <ul>
+                            <li><a href="#">信任中心首页</a></li>
+                            <li><a href="#">安全性</a></li>
+                            <li><a href="#">隐私与管控</a></li>
+                            <li><a href="#">合规性</a></li>
+                            <li><a href="#">透明度</a></li>
+                        </ul>
+                        <P>账户</P>
+                        <ul>
+                            <li><a href="#">Azure门户</a></li>
+                            <li><a href="#">充值，订阅与账单</a></li>
+                            <li><a href="#">企业门户网站</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer2">
+                <ul>
+                    <li>
+                        <a href="#"><span class="iconfont icon-diqiu "></span> 简体中文  <span class="iconfont icon-jiantou8"></span></a>
+                    </li>
+                    <li>
+                        <a href="#">访问全球版Azure网站</a>
+                    </li>
+                    <li>
+                        <a href="#">沪ICP备13015306号-25</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/gongan.png">沪公网安备31011502002224号</a>
+                    </li>
+                    <li>
+                        <a href="#">隐私</a>
+                    </li>
+                </ul>
+                <embed src="../images/logo.svg" type="image/svg+xml" id="logo2" />
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
